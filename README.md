@@ -2,6 +2,7 @@
 my very minimal dot files i guess
 
 OS: EndeavourOS
+
 Compositor: Jay
 
 Other stuff i use
