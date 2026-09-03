@@ -5,6 +5,7 @@ OS: EndeavourOS
 
 Compositor: Jay
 
+
 Other stuff i use
 - foot
 - grim + slurp + swappy + wayfreeze
