@@ -304,7 +304,7 @@ end)
 
 helpers.res_mirror( -- difficulty
     {
-        src = { x = 336!@, y = 691, w = 76, h = 29 },
+        src = { x = 336, y = 691, w = 76, h = 29 },
         dst = { x = 925, y = 885, w = 76 * 1, h = 29 * 1 },
         depth = 3,
         color_key = { input = "#DDDDDD", output = "#00FFFFFF" } --mr white #FFFFFF
