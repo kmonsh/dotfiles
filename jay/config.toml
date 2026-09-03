@@ -1,0 +1,205 @@
+render-device.name = "integrated"
+gfx-api = "Vulkan"
+direct-scanout = true
+auto-reload = true
+
+# The keymap that is used for shortcuts and also sent to clients.
+keymap = """
+    xkb_keymap {
+        xkb_keycodes { include "evdev+aliases(qwerty)" };
+        xkb_types    { include "complete"              };
+        xkb_compat   { include "complete"              };
+        xkb_symbols  { include "pc+us+inet(evdev)"     };
+    };
+    """
+
+# An action that will be executed when the GPU has been initialized.
+on-graphics-initialized = [
+    { type = "exec", exec = "dunst" },
+    { type = "exec", exec = "wl-tray-bridge" },
+    { type = "exec", exec.shell = "wlsunset -l -37.81 -L 144.96 -t 4000"},
+    { type = "exec", exec.shell = "swaybg -i /home/kmon-dms/Wallpapers/118206066_p0.jpg -m fill" },
+    { type = "exec", exec = "nm-applet" },
+    { type = "exec", exec.shell = "systemctl --user enable opentabletdriver.service --now" },
+    { type = "exec", exec = { prog = "jay", args = ["run-privileged", "/usr/bin/keyd-application-mapper", "-d"]}},
+]
+
+workspace-display-order = "sorted"
+middle-click-paste = false
+focus-follows-mouse = true
+unstable-mouse-follows-focus = true
+window-management-key = "Super_L"
+show-bar = true
+show-titles = false
+
+# swaylock
+on-idle = { type = "exec", exec = {
+    prog = "jay", args =["run-privileged", "swaylock", "-c", "1f1f1f"]
+}}
+
+[theme]
+bg-color = "#1e1e2e"
+bar-bg-color = "#181825"
+bar-status-text-color = "#cdd6f4"
+border-color = "#313244"
+focused-title-bg-color = "#89b4fa"
+focused-title-text-color = "#1e1e2e"
+unfocused-title-bg-color = "#313244"
+unfocused-title-text-color = "#cdd6f4"
+attention-requested-bg-color = "#f38ba8"
+highlight-color = "#f5c2e7"
+
+#border-width = 2
+#title-height = 24
+#bar-height = 20
+
+font = "JetBrains Mono 10"
+title-font = "JetBrains Mono 10"
+bar-font = "JetBrains Mono 10"
+
+[status]
+format = "i3bar"
+exec = "i3status"
+
+[shortcuts]
+# Launching Apps
+logo-Return = { type = "exec", exec = "foot" }
+logo-d = { type = "exec", exec = "fuzzel" }
+logo-b = { type = "exec", exec = "zen-browser" }
+logo-e = { type = "exec", exec = "thunar" }
+Print = { type = "exec", exec = "grim" }
+logo-shift-s = { type = "exec", exec = { prog = "bash", args = ["-lc", 'wayfreeze & PID=$!; sleep 0.1; grim -g "$(slurp)" - | wl-copy; kill "$PID" 2>/dev/null'], privileged = true } }
+logo-shift-d = { type = "exec", exec = { prog = "bash", args = ["-lc", 'wayfreeze & PID=$!; sleep 0.1; grim -g "$(slurp)" - | swappy -f -; kill "$PID" 2>/dev/null'], privileged = true } }
+
+# Lock Menu Scipt
+logo-Home = { type = "exec", exec = "/home/kmon-dms/.config/jay/power-menu.sh" }
+XF86PowerOff = { type = "exec", exec = "/home/kmon-dms/.config/jay/power-menu.sh" }
+
+
+logo-Left = "focus-left"
+logo-Down = "focus-down"
+logo-Up = "focus-up"
+logo-Right = "focus-right"
+
+
+logo-shift-Left = "move-left"
+logo-shift-Down = "move-down"
+logo-shift-Up= "move-up"
+logo-shift-Right = "move-right"
+
+logo-h = "split-horizontal"
+logo-v = "split-vertical"
+logo-t = "toggle-split"
+logo-f = "toggle-mono"
+shift-logo-f = "toggle-fullscreen"
+
+alt-f = "focus-parent"
+alt-c = "open-control-center"
+logo-q = "close"
+logo-space = "toggle-floating"
+
+logo-shift-c = "reload-config-toml"
+
+ctrl-alt-F1 = { type = "switch-to-vt", num = 1 }
+ctrl-alt-F2 = { type = "switch-to-vt", num = 2 }
+ctrl-alt-F3 = { type = "switch-to-vt", num = 3 }
+ctrl-alt-F4 = { type = "switch-to-vt", num = 4 }
+ctrl-alt-F5 = { type = "switch-to-vt", num = 5 }
+ctrl-alt-F6 = { type = "switch-to-vt", num = 6 }
+ctrl-alt-F7 = { type = "switch-to-vt", num = 7 }
+ctrl-alt-F8 = { type = "switch-to-vt", num = 8 }
+ctrl-alt-F9 = { type = "switch-to-vt", num = 9 }
+ctrl-alt-F10 = { type = "switch-to-vt", num = 10 }
+ctrl-alt-F11 = { type = "switch-to-vt", num = 11 }
+ctrl-alt-F12 = { type = "switch-to-vt", num = 12 }
+
+logo-1 = { type = "show-workspace", name = "1" }
+logo-2 = { type = "show-workspace", name = "2" }
+logo-3 = { type = "show-workspace", name = "3" }
+logo-4 = { type = "show-workspace", name = "4" }
+logo-5 = { type = "show-workspace", name = "5" }
+logo-6 = { type = "show-workspace", name = "6" }
+logo-7 = { type = "show-workspace", name = "7" }
+logo-8 = { type = "show-workspace", name = "8" }
+logo-9 = { type = "show-workspace", name = "9" }
+
+logo-shift-1 = { type = "move-to-workspace", name = "1" }
+logo-shift-2 = { type = "move-to-workspace", name = "2" }
+logo-shift-3 = { type = "move-to-workspace", name = "3" }
+logo-shift-4 = { type = "move-to-workspace", name = "4" }
+logo-shift-5 = { type = "move-to-workspace", name = "5" }
+logo-shift-6 = { type = "move-to-workspace", name = "6" }
+logo-shift-7 = { type = "move-to-workspace", name = "7" }
+logo-shift-8 = { type = "move-to-workspace", name = "8" }
+logo-shift-9 = { type = "move-to-workspace", name = "9" }
+
+XF86AudioMute = { type = "exec", exec.shell = "pactl set-sink-mute @DEFAULT_SINK@ toggle" }
+XF86AudioLowerVolume = { type = "exec", exec.shell = "pactl set-sink-volume @DEFAULT_SINK@ -5%" }
+XF86AudioRaiseVolume = { type = "exec", exec.shell = "pactl set-sink-volume @DEFAULT_SINK@ +5%" }
+XF86AudioMicMute = { type = "exec", exec.shell = "pactl set-source-mute @DEFAULT_SOURCE@ toggle" }
+
+XF86MonBrightnessDown = { type = "exec", exec = "brightnessctl set 5%-" }
+XF86MonBrightnessUp = { type = "exec", exec = "brightnessctl set 5%+" }
+
+# Laptop screen toggle
+logo-shift-bracketleft = { type = "configure-output", output = { match.connector = "eDP-1", enabled = false } }
+logo-shift-bracketright = { type = "configure-output", output = { match.connector = "eDP-1", enabled = true } }
+
+[[inputs]]
+tag = "mice"
+match.is-pointer = true
+accel-profile = "Flat"
+
+[[inputs]]
+match = { name = "SYNA2BA6:00 06CB:CF00 Touchpad", is-pointer = true }
+click-method = "clickfinger"
+tap-enabled = true
+tap-drag-enabled = true
+natural-scrolling = true
+px-scroll-multiplier = 0.1
+
+[[drm-devices]]
+name = "integrated"
+match = { pci-vendor = 0x1002, pci-model = 0x1900 }
+gfx-api = "Vulkan"
+direct-scanout = true
+
+[[drm-devices]]
+name = "dedicated"
+match = { pci-vendor = 0x10de, pci-model = 0x25ac }
+gfx-api = "Vulkan"
+direct-scanout = true
+
+[[outputs]]
+name = "left"
+match.connector = "HDMI-A-1"
+x = 0
+y = 0
+mode = { width = 1920, height = 1080, refresh-rate = 143.981}
+tearing.mode = "always"
+# color-space = "bt2020"
+# transfer-function = "pq"
+# brightness = 100
+blend-space = "linear"
+use-native-gamut = true
+format = "xrgb2101010"
+
+[[outputs]]
+name = "right"
+match.connector = "eDP-1"
+scale = 2.0
+x = 1920
+y = 0
+# mode = { width = 2560, height = 1600, refresh-rate = 90.000 }
+vrr = { mode = "always", cursor-hz = 60 }
+
+[color-management]
+enabled = true
+
+[[clients]]
+match.comm = "shikane"
+capabilities = ["head-manager"]
+
+[[clients]]
+match.comm = "wlsunset"
+capabilities = ["gamma-control-manager"]
