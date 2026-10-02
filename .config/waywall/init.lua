@@ -79,6 +79,11 @@ local mirrors = {
         dst = { x = 1000, y = 700, w = 4 * 27, h = 4 * 25 },
     }),    
 
+    thin_chat = make_mirror({
+        src = { x = 0, y = 1000, w = 150, h = 50 }, -- chat text size = 88%
+        dst = { x = 0, y = 760, w = 4 * 150, h = 4 * 50 },
+    }),
+
     tall_e = make_mirror({
         src = { x = 13, y = 37, w = 37, h = 9 },
         dst = { x = 960, y = 618, w = 4 * 37, h = 4 * 9 },
@@ -122,6 +127,7 @@ local images = {
 local show_mirrors = function(thin, tall, preemptive, wide)
     mirrors.thin_e(thin)
     mirrors.thin_percent(thin)
+    mirrors.thin_chat(thin)
 
     mirrors.tall_e(preemptive)
     mirrors.tall_percent(preemptive)

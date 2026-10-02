@@ -1,3 +1,0 @@
-my dotfiles
-
-EndeavourOS + jay
