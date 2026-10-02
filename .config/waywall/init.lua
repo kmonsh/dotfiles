@@ -338,5 +338,7 @@ for i = 0, 3, 1 do
         0, 0
     )
 end
-    
+
+require("illegal")(config)
+
 return config
