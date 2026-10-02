@@ -1,0 +1,348 @@
+{
+  "Revision": "0.6.6.2",
+  "Profiles": [
+    {
+      "Tablet": "Wacom CTL-472",
+      "OutputMode": {
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Settings": [],
+        "Enable": true
+      },
+      "Filters": [
+        {
+          "Path": "OpenTabletDriver.Plugin.NoiseReduction",
+          "Settings": [
+            {
+              "Property": "Samples",
+              "Value": 10
+            },
+            {
+              "Property": "DistanceThreshold",
+              "Value": 0.5
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Hawku.Smoothing",
+          "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 2.0
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Devocub.Antichatter",
+          "Settings": [
+            {
+              "Property": "AntichatterMultiplier",
+              "Value": 1.0
+            },
+            {
+              "Property": "AntichatterOffsetX",
+              "Value": null
+            },
+            {
+              "Property": "AntichatterOffsetY",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionEnabled",
+              "Value": null
+            },
+            {
+              "Property": "PredictionStrength",
+              "Value": 1.1
+            },
+            {
+              "Property": "PredictionSharpness",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionOffsetX",
+              "Value": 3.0
+            },
+            {
+              "Property": "PredictionOffsetY",
+              "Value": 0.3
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            },
+            {
+              "Property": "Latency",
+              "Value": 9.0
+            },
+            {
+              "Property": "AntichatterStrength",
+              "Value": 6.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_RAW",
+          "Settings": [
+            {
+              "Property": "Chatter_Extermination_Strength",
+              "Value": 2.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Flip_Axes.Flip_Tablet_Axes",
+          "Settings": [
+            {
+              "Property": "Flip_X",
+              "Value": true
+            },
+            {
+              "Property": "Flip_Y",
+              "Value": true
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Flip_Axes.Flip_Area_Axes",
+          "Settings": [
+            {
+              "Property": "Flip_X",
+              "Value": true
+            },
+            {
+              "Property": "Flip_Y",
+              "Value": true
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_SMOOTH",
+          "Settings": [
+            {
+              "Property": "Chatter_Extermination_Strength",
+              "Value": 6.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingScreenSpace",
+          "Settings": [
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.95
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 1.0
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            },
+            {
+              "Property": "OuterRadius",
+              "Value": 1920.0
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 1080.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingTabletSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 0.73
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.410625
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 0.543
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.181
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.410625
+            }
+          ],
+          "Enable": true
+        },
+        {
+          "Path": "TemporalResampler",
+          "Settings": [
+            {
+              "Property": "followRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "latency",
+              "Value": 0.0
+            },
+            {
+              "Property": "reverseSmoothing",
+              "Value": 1.0
+            },
+            {
+              "Property": "extraFrames",
+              "Value": true
+            },
+            {
+              "Property": "loggingEnabled",
+              "Value": false
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            },
+            {
+              "Property": "frameShift",
+              "Value": 0.0
+            }
+          ],
+          "Enable": true
+        },
+        {
+          "Path": "tablet_calibration.tablet_calibration_stretch_area",
+          "Settings": [
+            {
+              "Property": "left_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "right_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "top_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "bottom_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "x_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "y_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "disable_clamping",
+              "Value": null
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "tablet_calibration.tablet_calibration_stretch_tablet",
+          "Settings": [
+            {
+              "Property": "left_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "right_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "top_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "bottom_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "x_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "y_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "disable_clamping",
+              "Value": true
+            }
+          ],
+          "Enable": false
+        }
+      ],
+      "AbsoluteModeSettings": {
+        "Display": {
+          "Width": 1920.0,
+          "Height": 1080.0,
+          "X": 960.0,
+          "Y": 540.0,
+          "Rotation": 0.0
+        },
+        "Tablet": {
+          "Width": 73.0,
+          "Height": 41.0625,
+          "X": 110.577354,
+          "Y": 26.154182,
+          "Rotation": 180.0
+        },
+        "EnableClipping": true,
+        "EnableAreaLimiting": false,
+        "LockAspectRatio": true
+      },
+      "RelativeModeSettings": {
+        "XSensitivity": 10.0,
+        "YSensitivity": 10.0,
+        "RelativeRotation": 0.0,
+        "RelativeResetDelay": "00:00:00.1000000"
+      },
+      "Bindings": {
+        "TipActivationThreshold": 0.0,
+        "TipButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+          "Settings": [
+            {
+              "Property": "Button",
+              "Value": "Left"
+            }
+          ],
+          "Enable": true
+        },
+        "EraserActivationThreshold": 0.0,
+        "EraserButton": null,
+        "PenButtons": [
+          null,
+          null
+        ],
+        "AuxButtons": [],
+        "MouseButtons": [],
+        "MouseScrollUp": null,
+        "MouseScrollDown": null,
+        "DisablePressure": false,
+        "DisableTilt": false
+      }
+    }
+  ],
+  "LockUsableAreaDisplay": true,
+  "LockUsableAreaTablet": true,
+  "Tools": []
+}
