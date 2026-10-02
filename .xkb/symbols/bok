@@ -1,0 +1,35 @@
+// Place this file at ~/.config/xkb/symbols/mc
+partial alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1]= "Custom Layout";
+    include "us"
+
+    key <AE01> { [ g, G ] };
+    key <AE02> { [ h, Y ] };
+    key <AE03> { [ U002B, E ] };
+    key <AE04> { [ 4, J ] };
+    key <AE10> { [ l, L ] };
+    key <AE12> { [ U003D, VoidSymbol ] };
+    key <AD02> { [ u, H ] };
+    key <AD03> { [ e, A ] };
+    key <AD05> { [ m, M ] };
+    key <AD06> { [ VoidSymbol, VoidSymbol ] };
+    key <AD07> { [ VoidSymbol, VoidSymbol ] };
+    key <AD08> { [ VoidSymbol, VoidSymbol ] };
+    key <AD10> { [ VoidSymbol, VoidSymbol ] };
+    key <AC01> { [ n, N ] };
+    key <AC02> { [ p, B ] };
+    key <AC03> { [ i, I ] };
+    key <AC04> { [ U00F8, U00D8 ] };
+    key <AC05> { [ VoidSymbol, VoidSymbol ] };
+    key <AC06> { [ VoidSymbol, VoidSymbol ] };
+    key <AC07> { [ VoidSymbol, VoidSymbol ] };
+    key <AC09> { [ VoidSymbol, VoidSymbol ] };
+    key <AB01> { [ U00E5, U00C5 ] };
+    key <AB02> { [ s, S ] };
+    key <AB03> { [ v, V ] };
+    key <AB04> { [ b, VoidSymbol ] };
+    key <AB05> { [ VoidSymbol, VoidSymbol ] };
+    key <AB06> { [ VoidSymbol, VoidSymbol ] };
+    key <AB07> { [ VoidSymbol, VoidSymbol ] };
+};

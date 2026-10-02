@@ -1,0 +1,26 @@
+partial alphanumeric_keys
+xkb_symbols "layout" {
+    name[Group1] = "layout search crafting.";
+
+    key <RALT> { [  ISO_Level3_Shift  ], type[group1]="ONE_LEVEL" };
+    
+    key <AE01> { [ U002B, U002B, U0000, U0000 ] };
+    key <AE02> { [ U0032, U004E, U0000, U0000 ] };
+    key <AE03> { [ U0069, U0049, U0000, U0000 ] };
+    key <AE04> { [ U0034, U0034, U0000, U0000 ] };
+
+    key <AC02> { [ U0073, U0053, U0000, U0000 ] };
+    key <AC04> { [ U0062, U0042, U0000, U0000 ] };
+    key <AB04> { [ U006B, U004B, U0000, U0000 ] };
+    key <AB02> { [ U0078, U0058, U0000, U0000 ] };
+    key <AD02> { [ U0077, U0057, U0000, U0000 ] };
+    key <AD05> { [ U0074, U0054, U0000, U0000 ] };
+    key <AC03> { [ U0064, U0044, U0000, U0000 ] };
+    key <AD01> { [ U006F, U004F, U0000, U0000 ] };
+    key <AC01> { [ U0061, U0041, U0000, U0000 ] };
+    key <AB01> { [ U007A, U005A, U0000, U0000 ] };
+    key <AD03> { [ U0065, U0045, U0000, U0000 ] };
+    key <AD04> { [ U0072, U0052, U0000, U0000 ] };
+    key <AB03> { [ U0063, U0043, U0000, U0000 ] };
+
+};

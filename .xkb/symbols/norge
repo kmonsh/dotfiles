@@ -1,0 +1,24 @@
+partial alphanumeric_keys
+xkb_symbols "layout" {
+    name[Group1] = "search crafting";
+
+    key <AE01> { [ p, P ] };
+    key <AE02> { [ i, I ] };
+    key <AE03> { [ u, U ] };
+    key <AE04> { [ j, J ] };
+
+    key <AD01> { [ l, L ] };
+    key <AD02> { [ h, H ] };
+    key <AD03> { [ a, A ] };
+    key <AD04> { [ e, E ] };
+
+    key <AC01> { [ r, R ] };
+    key <AC02> { [ n, N ] };
+    key <AC03> { [ s, S ] };
+    key <AC04> { [ v, V ] };
+
+    key <AB01> { [ aring, Aring ] };
+    key <AB02> { [ b, B ] };
+    key <AB03> { [ oslash, Oslash ] };
+    key <AB04> { [ d, D ] };
+};

@@ -1,0 +1,34 @@
+partial alphanumeric_keys
+xkb_symbols "basic" {
+    name[Group1]= "Custom Layout";
+
+    key <AE01> { [ U002E, U002E ] };
+    key <AE02> { [ 1, 1 ] };
+    key <AE03> { [ u, U ] };
+    key <AE04> { [ 4, 4 ] };
+    key <AE10> { [ o, O ] };
+    key <AE11> { [ VoidSymbol, VoidSymbol ] };
+    key <AD01> { [ VoidSymbol, VoidSymbol ] };
+    key <AD02> { [ g, G ] };
+    key <AD03> { [ b, B ] };
+    key <AD04> { [ d, D ] };
+    key <AD05> { [ U002D, U002D ] };
+    key <AD06> { [ VoidSymbol, VoidSymbol ] };
+    key <AD07> { [ VoidSymbol, VoidSymbol ] };
+    key <AD08> { [ VoidSymbol, VoidSymbol ] };
+    key <AD09> { [ q, Q ] };
+    key <AC01> { [ n, N ] };
+    key <AC02> { [ s, S ] };
+    key <AC03> { [ r, R ] };
+    key <AC04> { [ f, F ] };
+    key <AC05> { [ w, W ] };
+    key <AC09> { [ VoidSymbol, VoidSymbol ] };
+    key <AB01> { [ l, L ] };
+    key <AB02> { [ y, Y ] };
+    key <AB03> { [ i, I ] };
+    key <AB04> { [ x, X ] };
+    key <AB05> { [ e, E ] };
+    key <AB06> { [ a, A ] };
+    key <AB09> { [ VoidSymbol, VoidSymbol ] };
+    key <SPCE> { [ space, space ] };
+};
