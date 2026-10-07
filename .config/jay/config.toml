@@ -82,7 +82,6 @@ logo-Down = "focus-down"
 logo-Up = "focus-up"
 logo-Right = "focus-right"
 
-
 logo-shift-Left = "move-left"
 logo-shift-Down = "move-down"
 logo-shift-Up= "move-up"
@@ -142,9 +141,11 @@ XF86AudioMicMute = { type = "exec", exec.shell = "pactl set-source-mute @DEFAULT
 XF86MonBrightnessDown = { type = "exec", exec = "brightnessctl set 5%-" }
 XF86MonBrightnessUp = { type = "exec", exec = "brightnessctl set 5%+" }
 
-# Laptop screen toggle
+# Laptop screen toggle and OTD reset
 logo-shift-bracketleft = { type = "configure-output", output = { match.connector = "eDP-1", enabled = false } }
 logo-shift-bracketright = { type = "configure-output", output = { match.connector = "eDP-1", enabled = true } }
+logo-o = { type = "exec", exec.shell = "systemctl --user restart opentabletdriver.service" }
+
 
 [[inputs]]
 tag = "mice"

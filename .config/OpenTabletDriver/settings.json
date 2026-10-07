@@ -1,0 +1,730 @@
+{
+  "Revision": "0.6.7",
+  "Profiles": [
+    {
+      "Tablet": "Wacom CTL-472",
+      "OutputMode": {
+        "Path": "OpenTabletDriver.Desktop.Output.AbsoluteMode",
+        "Settings": [],
+        "Enable": true
+      },
+      "Filters": [
+        {
+          "Path": "OpenTabletDriver.Plugin.NoiseReduction",
+          "Settings": [
+            {
+              "Property": "Samples",
+              "Value": 10
+            },
+            {
+              "Property": "DistanceThreshold",
+              "Value": 0.5
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Hawku.Smoothing",
+          "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 2.0
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Devocub.Antichatter",
+          "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 9.0
+            },
+            {
+              "Property": "AntichatterStrength",
+              "Value": 6.0
+            },
+            {
+              "Property": "AntichatterMultiplier",
+              "Value": 1.0
+            },
+            {
+              "Property": "AntichatterOffsetX",
+              "Value": 0.0
+            },
+            {
+              "Property": "AntichatterOffsetY",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionEnabled",
+              "Value": false
+            },
+            {
+              "Property": "PredictionStrength",
+              "Value": 1.1
+            },
+            {
+              "Property": "PredictionSharpness",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionOffsetX",
+              "Value": 3.0
+            },
+            {
+              "Property": "PredictionOffsetY",
+              "Value": 0.3
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_RAW",
+          "Settings": [
+            {
+              "Property": "Chatter_Extermination_Strength",
+              "Value": 2.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Flip_Axes.Flip_Tablet_Axes",
+          "Settings": [
+            {
+              "Property": "Flip_X",
+              "Value": true
+            },
+            {
+              "Property": "Flip_Y",
+              "Value": true
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Flip_Axes.Flip_Area_Axes",
+          "Settings": [
+            {
+              "Property": "Flip_X",
+              "Value": true
+            },
+            {
+              "Property": "Flip_Y",
+              "Value": true
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_SMOOTH",
+          "Settings": [
+            {
+              "Property": "Chatter_Extermination_Strength",
+              "Value": 6.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingScreenSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 1920.0
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 1080.0
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.95
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 1.0
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingTabletSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 0.73
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.410625
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.410625
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 0.543
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.181
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TemporalResampler",
+          "Settings": [
+            {
+              "Property": "frameShift",
+              "Value": 0.0
+            },
+            {
+              "Property": "followRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "latency",
+              "Value": 0.0
+            },
+            {
+              "Property": "reverseSmoothing",
+              "Value": 1.0
+            },
+            {
+              "Property": "extraFrames",
+              "Value": true
+            },
+            {
+              "Property": "loggingEnabled",
+              "Value": false
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "tablet_calibration.tablet_calibration_stretch_area",
+          "Settings": [
+            {
+              "Property": "left_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "right_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "top_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "bottom_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "x_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "y_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "disable_clamping",
+              "Value": null
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "tablet_calibration.tablet_calibration_stretch_tablet",
+          "Settings": [
+            {
+              "Property": "left_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "right_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "top_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "bottom_stretch",
+              "Value": 1.0
+            },
+            {
+              "Property": "x_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "y_offset",
+              "Value": 0.0
+            },
+            {
+              "Property": "disable_clamping",
+              "Value": true
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TrajectoryEigenFilter.OTD.TrajectoryEigenFilterPlugin",
+          "Settings": [
+            {
+              "Property": "WindowMilliseconds",
+              "Value": 100.0
+            },
+            {
+              "Property": "LambdaCutoff",
+              "Value": 1.5
+            },
+            {
+              "Property": "Depth",
+              "Value": 8
+            },
+            {
+              "Property": "OutlierThreshold",
+              "Value": 6.0
+            },
+            {
+              "Property": "LatencyMs",
+              "Value": 0.0
+            },
+            {
+              "Property": "StalenessTimeoutMs",
+              "Value": 25.0
+            },
+            {
+              "Property": "UseAdaptiveLambda",
+              "Value": true
+            },
+            {
+              "Property": "AdaptiveLambdaAt0Ms",
+              "Value": 1.5
+            },
+            {
+              "Property": "AdaptiveLambdaAt2Ms",
+              "Value": 1.2
+            },
+            {
+              "Property": "AdaptiveLambdaAt5Ms",
+              "Value": 1.05
+            },
+            {
+              "Property": "AdaptiveLambdaAt10Ms",
+              "Value": 1.04
+            },
+            {
+              "Property": "AdaptiveLambdaAt20Ms",
+              "Value": 1.03
+            },
+            {
+              "Property": "EnableCsvLogging",
+              "Value": false
+            }
+          ],
+          "Enable": true
+        }
+      ],
+      "AbsoluteModeSettings": {
+        "Display": {
+          "Width": 1920.0,
+          "Height": 1080.0,
+          "X": 960.0,
+          "Y": 540.0,
+          "Rotation": 0.0
+        },
+        "Tablet": {
+          "Width": 58.0,
+          "Height": 45.0,
+          "X": 110.853516,
+          "Y": 38.305344,
+          "Rotation": 180.0
+        },
+        "EnableClipping": true,
+        "EnableAreaLimiting": false,
+        "LockAspectRatio": false
+      },
+      "RelativeModeSettings": {
+        "XSensitivity": 10.0,
+        "YSensitivity": 10.0,
+        "RelativeRotation": 0.0,
+        "RelativeResetDelay": "00:00:00.1000000"
+      },
+      "Bindings": {
+        "TipActivationThreshold": 0.0,
+        "TipButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.MouseBinding",
+          "Settings": [
+            {
+              "Property": "Button",
+              "Value": "Left"
+            }
+          ],
+          "Enable": true
+        },
+        "EraserActivationThreshold": 0.0,
+        "EraserButton": null,
+        "PenButtons": [
+          null,
+          null
+        ],
+        "AuxButtons": [],
+        "MouseButtons": [],
+        "MouseScrollUp": null,
+        "MouseScrollDown": null,
+        "WheelBindings": [],
+        "DisablePressure": true,
+        "DisableTilt": false,
+        "EnableDragBindings": false
+      }
+    },
+    {
+      "Tablet": "Wacom CTL-4100WL",
+      "OutputMode": {
+        "Path": "OpenTabletDriver.Desktop.Output.LinuxArtistMode",
+        "Settings": [],
+        "Enable": true
+      },
+      "Filters": [
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingScreenSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 5.0
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.95
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 1.0
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "RadialFollow.RadialFollowSmoothingTabletSpace",
+          "Settings": [
+            {
+              "Property": "OuterRadius",
+              "Value": 1.0
+            },
+            {
+              "Property": "InnerRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "SmoothingCoefficient",
+              "Value": 0.95
+            },
+            {
+              "Property": "SoftKneeScale",
+              "Value": 1.0
+            },
+            {
+              "Property": "SmoothingLeakCoefficient",
+              "Value": 0.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TemporalResampler",
+          "Settings": [
+            {
+              "Property": "frameShift",
+              "Value": 0.5
+            },
+            {
+              "Property": "followRadius",
+              "Value": 0.0
+            },
+            {
+              "Property": "latency",
+              "Value": 0.0
+            },
+            {
+              "Property": "reverseSmoothing",
+              "Value": 1.0
+            },
+            {
+              "Property": "extraFrames",
+              "Value": true
+            },
+            {
+              "Property": "loggingEnabled",
+              "Value": false
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TrajectoryEigenFilter.OTD.TrajectoryEigenFilterPlugin",
+          "Settings": [
+            {
+              "Property": "WindowMilliseconds",
+              "Value": 100.0
+            },
+            {
+              "Property": "LambdaCutoff",
+              "Value": 1.5
+            },
+            {
+              "Property": "Depth",
+              "Value": 8
+            },
+            {
+              "Property": "OutlierThreshold",
+              "Value": 6.0
+            },
+            {
+              "Property": "LatencyMs",
+              "Value": 5.0
+            },
+            {
+              "Property": "StalenessTimeoutMs",
+              "Value": 25.0
+            },
+            {
+              "Property": "UseAdaptiveLambda",
+              "Value": true
+            },
+            {
+              "Property": "AdaptiveLambdaAt0Ms",
+              "Value": 1.5
+            },
+            {
+              "Property": "AdaptiveLambdaAt2Ms",
+              "Value": 1.2
+            },
+            {
+              "Property": "AdaptiveLambdaAt5Ms",
+              "Value": 1.05
+            },
+            {
+              "Property": "AdaptiveLambdaAt10Ms",
+              "Value": 1.04
+            },
+            {
+              "Property": "AdaptiveLambdaAt20Ms",
+              "Value": 1.03
+            },
+            {
+              "Property": "EnableCsvLogging",
+              "Value": false
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Devocub.Antichatter",
+          "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 2.0
+            },
+            {
+              "Property": "AntichatterStrength",
+              "Value": 3.0
+            },
+            {
+              "Property": "AntichatterMultiplier",
+              "Value": 1.0
+            },
+            {
+              "Property": "AntichatterOffsetX",
+              "Value": 0.0
+            },
+            {
+              "Property": "AntichatterOffsetY",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionEnabled",
+              "Value": false
+            },
+            {
+              "Property": "PredictionStrength",
+              "Value": 1.1
+            },
+            {
+              "Property": "PredictionSharpness",
+              "Value": 1.0
+            },
+            {
+              "Property": "PredictionOffsetX",
+              "Value": 3.0
+            },
+            {
+              "Property": "PredictionOffsetY",
+              "Value": 0.3
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "TabletDriverFilters.Hawku.Smoothing",
+          "Settings": [
+            {
+              "Property": "Latency",
+              "Value": 2.0
+            },
+            {
+              "Property": "Frequency",
+              "Value": 1000.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_RAW",
+          "Settings": [
+            {
+              "Property": "Chatter_Extermination_Strength",
+              "Value": 2.0
+            }
+          ],
+          "Enable": false
+        },
+        {
+          "Path": "Kuuube_s_Chatter_Exterminator.Kuuube_s_CHATTER_EXTERMINATOR_SMOOTH",
+          "Settings": [
+            {
+              "Property": "Chatter_Extermination_Strength",
+              "Value": 6.0
+            }
+          ],
+          "Enable": false
+        }
+      ],
+      "AbsoluteModeSettings": {
+        "Display": {
+          "Width": 1920.0,
+          "Height": 1080.0,
+          "X": 960.0,
+          "Y": 540.0,
+          "Rotation": 0.0
+        },
+        "Tablet": {
+          "Width": 58.0,
+          "Height": 45.0,
+          "X": 34.5141,
+          "Y": 66.632904,
+          "Rotation": 0.0
+        },
+        "EnableClipping": true,
+        "EnableAreaLimiting": false,
+        "LockAspectRatio": false
+      },
+      "RelativeModeSettings": {
+        "XSensitivity": 10.0,
+        "YSensitivity": 10.0,
+        "RelativeRotation": 0.0,
+        "RelativeResetDelay": "00:00:00.1000000"
+      },
+      "Bindings": {
+        "TipActivationThreshold": 1.0,
+        "TipButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.AdaptiveBinding",
+          "Settings": [
+            {
+              "Property": "Binding",
+              "Value": "Tip"
+            }
+          ],
+          "Enable": true
+        },
+        "EraserActivationThreshold": 1.0,
+        "EraserButton": {
+          "Path": "OpenTabletDriver.Desktop.Binding.AdaptiveBinding",
+          "Settings": [
+            {
+              "Property": "Binding",
+              "Value": "Eraser"
+            }
+          ],
+          "Enable": true
+        },
+        "PenButtons": [
+          {
+            "Path": "OpenTabletDriver.Desktop.Binding.AdaptiveBinding",
+            "Settings": [
+              {
+                "Property": "Binding",
+                "Value": "Button 1"
+              }
+            ],
+            "Enable": true
+          },
+          {
+            "Path": "OpenTabletDriver.Desktop.Binding.AdaptiveBinding",
+            "Settings": [
+              {
+                "Property": "Binding",
+                "Value": "Button 2"
+              }
+            ],
+            "Enable": true
+          }
+        ],
+        "AuxButtons": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "MouseButtons": [],
+        "MouseScrollUp": null,
+        "MouseScrollDown": null,
+        "WheelBindings": [],
+        "DisablePressure": false,
+        "DisableTilt": false,
+        "EnableDragBindings": false
+      }
+    }
+  ],
+  "LockUsableAreaDisplay": true,
+  "LockUsableAreaTablet": false,
+  "Tools": []
+}
