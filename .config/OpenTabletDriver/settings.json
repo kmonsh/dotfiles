@@ -636,6 +636,20 @@
             }
           ],
           "Enable": false
+        },
+        {
+          "Path": "OpenTabletDriver.Plugin.NoiseReduction",
+          "Settings": [
+            {
+              "Property": "Samples",
+              "Value": 10
+            },
+            {
+              "Property": "DistanceThreshold",
+              "Value": 0.5
+            }
+          ],
+          "Enable": false
         }
       ],
       "AbsoluteModeSettings": {
@@ -647,8 +661,8 @@
           "Rotation": 0.0
         },
         "Tablet": {
-          "Width": 58.0,
-          "Height": 45.0,
+          "Width": 62.0,
+          "Height": 49.0,
           "X": 34.5141,
           "Y": 66.632904,
           "Rotation": 0.0
