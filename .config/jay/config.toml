@@ -113,15 +113,16 @@ ctrl-alt-F10 = { type = "switch-to-vt", num = 10 }
 ctrl-alt-F11 = { type = "switch-to-vt", num = 11 }
 ctrl-alt-F12 = { type = "switch-to-vt", num = 12 }
 
-logo-1 = { type = "show-workspace", name = "1" }
-logo-2 = { type = "show-workspace", name = "2" }
-logo-3 = { type = "show-workspace", name = "3" }
-logo-4 = { type = "show-workspace", name = "4" }
-logo-5 = { type = "show-workspace", name = "5" }
-logo-6 = { type = "show-workspace", name = "6" }
-logo-7 = { type = "show-workspace", name = "7" }
-logo-8 = { type = "show-workspace", name = "8" }
-logo-9 = { type = "show-workspace", name = "9" }
+logo-1 = { type = "show-workspace", name = "1", output.connector = "HDMI-A-1", move-to-output = true }
+logo-2 = { type = "show-workspace", name = "2", output.connector = "HDMI-A-1", move-to-output = true }
+logo-3 = { type = "show-workspace", name = "3", output.connector = "HDMI-A-1", move-to-output = true }
+logo-4 = { type = "show-workspace", name = "4", output.connector = "HDMI-A-1", move-to-output = true }
+logo-5 = { type = "show-workspace", name = "5", output.connector = "HDMI-A-1", move-to-output = true }
+logo-6 = { type = "show-workspace", name = "6", output.connector = "HDMI-A-1", move-to-output = true }
+logo-7 = { type = "show-workspace", name = "7", output.connector = "HDMI-A-1", move-to-output = true }
+logo-8 = { type = "show-workspace", name = "8", output.connector = "HDMI-A-1", move-to-output = true }
+logo-9 = { type = "show-workspace", name = "9", output.connector = "eDP-1", move-to-output = true }
+logo-0 = { type = "show-workspace", name = "10", output.connector = "eDP-1", move-to-output = true }
 
 logo-shift-1 = { type = "move-to-workspace", name = "1" }
 logo-shift-2 = { type = "move-to-workspace", name = "2" }
@@ -132,6 +133,7 @@ logo-shift-6 = { type = "move-to-workspace", name = "6" }
 logo-shift-7 = { type = "move-to-workspace", name = "7" }
 logo-shift-8 = { type = "move-to-workspace", name = "8" }
 logo-shift-9 = { type = "move-to-workspace", name = "9" }
+logo-shift-0 = { type = "move-to-workspace", name = "10" }
 
 XF86AudioMute = { type = "exec", exec.shell = "pactl set-sink-mute @DEFAULT_SINK@ toggle" }
 XF86AudioLowerVolume = { type = "exec", exec.shell = "pactl set-sink-volume @DEFAULT_SINK@ -5%" }
@@ -146,7 +148,6 @@ logo-shift-bracketleft = { type = "configure-output", output = { match.connector
 logo-shift-bracketright = { type = "configure-output", output = { match.connector = "eDP-1", enabled = true } }
 logo-o = { type = "exec", exec.shell = "systemctl --user restart opentabletdriver.service" }
 
-
 [[inputs]]
 tag = "mice"
 match.is-pointer = true
@@ -159,6 +160,10 @@ tap-enabled = true
 tap-drag-enabled = true
 natural-scrolling = true
 px-scroll-multiplier = 0.1
+
+[[inputs]]
+match.name = "OpenTabletDriver Virtual Artist Tablet"
+output.connector = "HDMI-A-1"
 
 [[drm-devices]]
 name = "integrated"
