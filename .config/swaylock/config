@@ -1,0 +1,47 @@
+# Image & Scaling
+image=/home/kmon-dms/Wallpapers/tokyonight.jpg
+scaling=fill
+
+# Font Settings
+font=JetBrains Mono
+font-size=20
+
+# Always display the indicator circle
+indicator-idle-visible
+
+# Ring Geometry
+indicator-radius=100
+indicator-thickness=12
+
+# Behavior
+ignore-empty-password
+show-failed-attempts
+
+# Base Background
+color=1a1b26
+
+# Inside Circle (Semi-transparent dark blue)
+inside-color=1a1b26cc
+inside-ver-color=7aa2f7cc
+inside-wrong-color=f7768ecc
+inside-clear-color=e0af68cc
+
+# Ring Border (Tokyo Night accents)
+ring-color=7aa2f7ff
+ring-ver-color=7dcfffff
+ring-wrong-color=f7768eff
+ring-clear-color=e0af68ff
+
+# Keypress Segments & Backspace Highlights
+key-hl-color=bb9af7ff
+bs-hl-color=f7768eff
+
+# Separator & Outline Lines (disable sharp outlines)
+separator-color=00000000
+line-color=00000000
+
+# Text Colors
+text-color=c0caf5ff
+text-ver-color=1a1b26ff
+text-wrong-color=1a1b26ff
+text-clear-color=1a1b26ff
