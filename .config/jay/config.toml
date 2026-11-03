@@ -28,7 +28,7 @@ workspace-display-order = "sorted"
 middle-click-paste = false
 focus-follows-mouse = true
 unstable-mouse-follows-focus = true
-use-hardware-cursor = false
+use-hardware-cursor = true
 window-management-key = "Super_L"
 show-bar = true
 show-titles = true
@@ -68,6 +68,7 @@ exec = "i3status"
 logo-Return = { type = "exec", exec = "alacritty" }
 logo-d = { type = "exec", exec = "fuzzel" }
 logo-b = { type = "exec", exec = ["wl-veil", "-f", "wl_fixes=1", "zen-browser"] }
+logo-shift-b = { type = "exec", exec = ["wl-veil", "-f", "wl_fixes=1", "zen-browser", "--private-window"] }
 logo-e = { type = "exec", exec = "thunar" }
 Print = { type = "exec", exec = "grim" }
 logo-shift-s = { type = "exec", exec = { prog = "bash", args = ["-lc", 'wayfreeze & PID=$!; sleep 0.1; grim -g "$(slurp)" - | wl-copy; kill "$PID" 2>/dev/null'], privileged = true } }
@@ -197,7 +198,7 @@ match.connector = "eDP-1"
 scale = 2.0
 x = 1920
 y = 0
-# mode = { width = 2560, height = 1600, refresh-rate = 90.000 }
+mode = { width = 2560, height = 1600, refresh-rate = 90 }
 vrr = { mode = "always", cursor-hz = 60 }
 
 [color-management]
@@ -209,4 +210,8 @@ capabilities = ["head-manager"]
 
 [[clients]]
 match.comm = "wlsunset"
+capabilities = ["gamma-control-manager"]
+
+[[clients]]
+match.comm = "hulk"
 capabilities = ["gamma-control-manager"]

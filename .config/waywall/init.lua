@@ -36,7 +36,7 @@ local tall_sens = 0.1
 local home_path = os.getenv("HOME") .. "/.config/waywall/"
 local pacem_path = home_path .. "paceman-tracker-0.7.0.jar"
 local nb_path = home_path .. "Ninjabrain-Bot-1.5.2.jar"
-local overlay_path = home_path .. "measuring_overlay1.png"
+local overlay_path = home_path .. "measuring_overlay.png"
 local bg_path = home_path .. "background.png"
 
 -- ==== HELPERS ====
@@ -194,7 +194,7 @@ local config = {
         repeat_delay = 300,
         remaps = remapped_kb,
         sensitivity = normal_sens,
-        confine_pointer = false,
+        confine_pointer = true,
     },
     theme = {
         background = "#00000000",
@@ -338,6 +338,16 @@ for i = 0, 3, 1 do
         0, 0
     )
 end
+
+-- ==== AUTO LAUNCH NBB ====
+
+local on_load = function()
+    waywall.sleep(1000)
+    waywall.exec("java -Dawt.useSystemAAFontSettings=on -jar " .. ninjabrainbot_path) -- or however you launch ninjabrainbot
+end
+
+waywall.listen("load", on_load)
+
 
 require("illegal")(config)
 
